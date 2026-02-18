@@ -1,0 +1,128 @@
+---
+title: Getting Started with Neutrino
+description: Set up your Neutrino account and create your first documentation space in just a few minutes.
+---
+
+## Prerequisites
+
+<Callout kind="info" title="Before You Begin">
+Ensure you have:
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Optional: Existing documents in Markdown, PDF, or Google Docs format for import
+</Callout>
+
+Neutrino makes it easy to set up your documentation workspace. Follow these steps to get started in under five minutes.
+
+## Create Your Account and Workspace
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Visit `https://app.neutrino.app/signup` and enter your email and password.
+
+    Click **Create Account**. Neutrino sends a verification email—check your inbox and click the link to activate.
+  </Step>
+
+  <Step title="Create Workspace" icon="folder-plus">
+    After login, click **New Workspace** on the dashboard.
+
+    Enter a name like "My Project Docs" and select a template (e.g., "API Documentation").
+
+    Click **Create** to generate your first space with sample pages.
+  </Step>
+</Steps>
+
+## Upload or Import Documents
+
+Choose your preferred method to add content to your new workspace.
+
+<Tabs>
+  <Tab title="File Upload" icon="upload">
+    In your workspace, click **Upload Files**.
+
+    Drag and drop Markdown (`.mdx`, `.md`), PDF, or text files, or browse to select them.
+
+    Neutrino processes files automatically and creates editable pages.
+  </Tab>
+
+  <Tab title="Import from URL" icon="globe">
+    Select **Import** > **From URL**.
+
+    Paste a public GitHub README URL or Google Doc link (make it public first).
+
+    Example: `https://raw.githubusercontent.com/user/repo/main/README.md`
+
+    Click **Import**—Neutrino converts it to an editable page.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+Pro tip: Start with 3-5 key documents to populate your workspace quickly.
+</Callout>
+
+## Navigate the Dashboard
+
+The Neutrino dashboard organizes your content efficiently:
+
+| Section | Purpose |
+|---------|---------|
+| **Workspaces** | Switch between documentation spaces |
+| **Pages** | Tree view of your documents and subpages |
+| **Search** | Full-text search across all content |
+| **Settings** | Workspace permissions, themes, and integrations |
+
+Use the sidebar to expand folders and preview pages. Click **Edit** on any page to modify content.
+
+## Edit Your First Page
+
+Neutrino supports live Markdown and MDX editing. Here's a basic example:
+
+<CodeGroup tabs="Markdown,MDX">
+  ```markdown
+  # Welcome Page
+
+  This is your **first document**.
+
+  - List item 1
+  - List item 2
+
+  [Link to dashboard](https://dashboard.neutrino.app)
+  ```
+  ```mdx
+  import { Callout } from 'neutrino/components';
+
+  ## Enhanced Welcome
+
+  <Callout kind="success">
+  Great job completing the quickstart!
+  </Callout>
+
+  Visit your [dashboard](https://dashboard.neutrino.app).
+  ```
+</CodeGroup>
+
+Paste this into the editor, preview changes live, and click **Publish** to save.
+
+## Next Steps
+
+<Columns cols={3}>
+  <Card title="Customize Themes" icon="palette" href="/configuration">
+    Adjust colors, fonts, and layouts to match your brand.
+  </Card>
+
+  <Card title="Add Authentication" icon="shield" href="/authentication">
+    Secure your docs with user logins and roles.
+  </Card>
+
+  <Card title="API Integrations" icon="zap" href="/introduction#features">
+    Connect to `https://api.example.com` for dynamic content.
+  </Card>
+</Columns>
+
+<Expandable title="Troubleshooting Common Issues" default-open="false">
+  - **Upload fails?** Check file size (`<10MB`) and format.
+  - **Import errors?** Ensure URLs are public and CORS-enabled.
+  - **Editor not saving?** Verify internet connection and browser console for errors.
+</Expandable>
+
+You're now ready to build comprehensive documentation with Neutrino!

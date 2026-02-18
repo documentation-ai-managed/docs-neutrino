@@ -1,0 +1,148 @@
+---
+title: Changelog
+description: Track the latest updates, improvements, and fixes in Neutrino.
+---
+
+## Recent Updates
+
+Neutrino releases follow semantic versioning. You receive automatic notifications for new versions through the dashboard at `https://dashboard.example.com`. Check the tags below for quick categorization: `feature` for new capabilities, `bugfix` for corrections, `breaking` for major changes, and `improvement` for enhancements.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for documentation editing with multiple users.
+- Introduced AI-powered content suggestions to help you draft pages faster.
+- New integrations with GitHub and Slack for seamless workflows.
+
+## Improvements
+
+- Enhanced search performance, now `<2s` for large documentation sites.
+- Updated editor with dark mode and improved mobile responsiveness.
+
+## Bug Fixes
+
+- Fixed rendering issues with nested code blocks in MDX files.
+- Resolved authentication errors during webhook deliveries.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Custom themes support with your brand colors like `#3B82F6`.
+- Embed videos and iframes directly in documentation pages.
+
+## Improvements
+
+- Faster page builds with optimized asset caching.
+
+## Bug Fixes
+
+- Corrected table alignment problems in responsive views.
+- Patched security vulnerability in API token handling.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## New Features
+
+- Core documentation management with version control.
+- Full MDX support including custom components.
+- Dashboard for organizing projects and pages.
+
+## Breaking Changes
+
+- Updated configuration format from YAML to JSON. Migrate using the built-in converter.
+
+## Migration Notes
+
+Run the upgrade command:
+
+````bash
+neutrino upgrade v1.0.0
+````
+
+</Update>
+
+## Upcoming Roadmap
+
+Explore planned enhancements coming soon to Neutrino.
+
+<Columns cols={3}>
+
+<Card title="Advanced Analytics" icon="bar-chart-3" href="#">
+
+Track page views and user engagement metrics.
+
+</Card>
+
+<Card title="Version Previews" icon="git-branch" href="#">
+
+Preview changes before publishing.
+
+</Card>
+
+<Card title="Plugin Marketplace" icon="package" href="#">
+
+Extend functionality with community plugins.
+
+</Card>
+
+</Columns>
+
+<Callout kind="tip">
+
+Subscribe to updates at `https://dashboard.example.com/settings/notifications` to get email alerts for new releases. Follow [Neutrino on GitHub](https://github.com/example/neutrino) for early access.
+
+</Callout>
+
+## Upgrade Guide
+
+<Expandable title="How to upgrade between versions" default-open="true">
+
+Follow these steps to update Neutrino safely.
+
+<Steps>
+
+<Step title="Backup your project" icon="database">
+
+Create a full backup of your documentation repository.
+
+</Step>
+
+<Step title="Check release notes" icon="book-open">
+
+Review changes in this changelog for your target version.
+
+</Step>
+
+<Step title="Run the updater" icon="download">
+
+<CodeGroup tabs="npm,yarn">
+
+````bash
+npm install neutrino@latest
+````
+
+````bash
+yarn add neutrino@latest
+````
+
+</CodeGroup>
+
+</Step>
+
+<Step title="Test locally" icon="play">
+
+Preview your site with `neutrino dev` and verify all pages render correctly.
+
+</Step>
+
+</Steps>
+
+</Expandable>
+
+For breaking changes, refer to migration notes in each release. If you encounter issues, check the [help center](/help-center).
